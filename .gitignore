@@ -1,0 +1,28 @@
+# ---------- Python / Django (backend) ----------
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+db.sqlite3
+/backend/staticfiles/
+/backend/media/
+
+# ---------- Node / React (frontend) ----------
+node_modules/
+dist/
+build/
+.vite/
+
+# ---------- Variables de entorno (NUNCA subir credenciales) ----------
+.env
+.env.local
+.env.*.local
+
+# ---------- Editor / SO ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

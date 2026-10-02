@@ -1,0 +1,10 @@
+Django==5.1.4
+djangorestframework==3.15.2
+python-decouple==3.8
+psycopg2-binary==2.9.10
+django-cors-headers==4.4.0
+
+# Se agregarán conforme avancen los sprints:
+# djangorestframework-simplejwt   (autenticación JWT)
+# gunicorn, whitenoise, dj-database-url   (despliegue en Render)
+# langchain, pgvector, anthropic/openai   (IA y RAG)
