@@ -1,10 +1,33 @@
+# --- Nucleo ---
 Django==5.1.4
 djangorestframework==3.15.2
-python-decouple==3.8
-psycopg2-binary==2.9.10
+djangorestframework-simplejwt==5.3.1
 django-cors-headers==4.4.0
+django-filter==24.3
+drf-spectacular==0.27.2
+python-decouple==3.8
 
-# Se agregarán conforme avancen los sprints:
-# djangorestframework-simplejwt   (autenticación JWT)
-# gunicorn, whitenoise, dj-database-url   (despliegue en Render)
-# langchain, pgvector, anthropic/openai   (IA y RAG)
+# --- Base de datos (Supabase = PostgreSQL + pgvector) ---
+psycopg2-binary==2.9.10
+pgvector==0.3.6
+
+# --- Lectura de documentos, reportes y almacenamiento ---
+pypdf==5.1.0
+python-docx==1.1.2
+python-pptx==1.0.2
+openpyxl==3.1.5
+reportlab==4.2.5
+requests==2.32.3
+
+# --- Inicio de sesion con Google ---
+google-auth==2.36.0
+
+# --- Despliegue (Render) ---
+gunicorn==23.0.0
+whitenoise==6.7.0
+
+# --- Proveedor de IA: instala SOLO el que vayas a usar (IA_PROVEEDOR en .env) ---
+# anthropic>=0.40
+# openai>=1.54
+# --- OCR para analizar imagenes (opcional; requiere tesseract-ocr en el sistema) ---
+# pytesseract>=0.3.10
